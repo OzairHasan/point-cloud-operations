@@ -4,9 +4,9 @@ from jsonlistwriter import JSONListWriter
 
 
 
-fileName = 'plafondbleu_50k'
+fileName = 'livingroom_50k'
 fileExt = '.txt'
-outputJSONFileName = 'plafondbleu_50k_js'
+outputJSONFileName = fileName + '_js'
 jsFileExt = '.js'
 listName = 'data'
 
