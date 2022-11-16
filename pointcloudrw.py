@@ -15,8 +15,8 @@ class PointCloudReader:
         for i in range(numPoints):
             [x, y, z, R, G, B] = file.readline().split(' ')[:6]
             point = CloudPoint(float(x), float(y),
-                                float(z), int(R),
-                                int(G), int(B))
+                                float(z), int(float(R)),
+                                int(float(G)), int(float(B)))
             outputPointCloud.append(point)
         file.close()
 
